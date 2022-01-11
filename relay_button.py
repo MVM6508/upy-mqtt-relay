@@ -54,3 +54,4 @@ class RelayButton():
                 # done
                 self._counting = False
                 self._button_release()
+                #print(self._rpin.value())

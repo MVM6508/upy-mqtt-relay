@@ -2,23 +2,26 @@
 
 # General
 
-VERSION = "1.0.1"
+VERSION = "1.0.2" # Added user settings to mqtt
 
 # WIFI settings
-WIFI_SSID = "yourssid"
-WIFI_PASS = "yourwifipassword"
+WIFI_SSID = "YOUR_NETWORK_SSID"
+WIFI_PASS = "YOUR_WIFI_PASSWORD"
 
 # MQTT Server Settings
-MQTT_SERVER = "yourmqttserverip"
+MQTT_SERVER = "IP-address"
 MQTT_PORT = 1883
-MQTT_CLIENT = "relay1"
+MQTT_CLIENT = "UNIQUE_CLIENT_NAME"
+MQTT_USER = "MQTT_USERNAM"
+MQTT_PASSWD = "MQTT_PASSWORD"
+
 
 # MQTT Topics
 TOPIC_COMMANDS = "relays/command"
 TOPIC_STATUS = "relays/status"
 
 # Relay pin numbers (these are wemos D1/D2 mini mappings)
-RELAY_PINS = (15, 13, 12, 14) # D8, D7, D6, D5
+RELAY_PINS = (14, 12, 13, 15) # D8, D7, D6, D5
 
 # button settings
 BUTTON_PULSE_TIMEOUT = 5 # timeout in seconds
